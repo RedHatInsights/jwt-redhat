@@ -674,13 +674,13 @@ function ssoUrl(isInternal) {
         // Valid STAGE URLs
         case 'access.stage.redhat.com':
         case 'access.stage.itop.redhat.com':
-        case 'access.qa.itop.redhat.com':
-        case 'access.ci.itop.redhat.com':
         case 'accessstage.usersys.redhat.com':
         case 'stage.foo.redhat.com':
             log('[jwt.js] ENV: stage');
             return "https://" + subDomain + ".stage.redhat.com/auth";
         // Valid QA URLs
+        case 'access.qa.itop.redhat.com':
+        case 'access.ci.itop.redhat.com':
         case 'access.qa.redhat.com':
         case 'qa.foo.redhat.com':
         case 'accessqa.usersys.redhat.com':
