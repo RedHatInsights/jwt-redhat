@@ -683,6 +683,7 @@ function ssoUrl(isInternal) {
         case 'access.ci.itop.redhat.com':
         case 'access.qa.redhat.com':
         case 'qa.foo.redhat.com':
+        case 'ci.foo.redhat.com':
         case 'accessqa.usersys.redhat.com':
         case 'unified-qa.gsslab.pnq2.redhat.com':
             log('[jwt.js] ENV: qa');
@@ -696,7 +697,6 @@ function ssoUrl(isInternal) {
         // Valid CI URLs
         case 'access.devgssci.devlab.phx1.redhat.com':
         case 'accessci.usersys.redhat.com':
-        case 'ci.foo.redhat.com':
         default:
             log('[jwt.js] ENV: ci');
             return "https://" + subDomain + ".dev2.redhat.com/auth";
