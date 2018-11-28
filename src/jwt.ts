@@ -606,6 +606,7 @@ function ssoUrl(isInternal?: boolean) {
         // Valid STAGE URLs
         case 'access.stage.redhat.com':
         case 'access.stage.itop.redhat.com':
+        case 'access.stage.cloud.paas.upshift.redhat.com':
         case 'accessstage.usersys.redhat.com':
         case 'stage.foo.redhat.com':
             log('[jwt.js] ENV: stage');
@@ -614,6 +615,8 @@ function ssoUrl(isInternal?: boolean) {
         // Valid QA URLs
         case 'access.qa.itop.redhat.com':
         case 'access.ci.itop.redhat.com':
+        case 'access.ci.cloud.paas.upshift.redhat.com':
+        case 'access.qa.cloud.paas.upshift.redhat.com':
         case 'access.qa.redhat.com':
         case 'qa.foo.redhat.com':
         case 'ci.foo.redhat.com':
